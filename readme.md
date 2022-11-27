@@ -122,6 +122,9 @@ git clone https://github.com/galamo/oracle_week_react_node_2022
     ```
 
 # Running Setup for API
+first run
+`npm install -g typescript -g nodemon -g concurrently`
+
 1. navigate `./apps/api/`
 2. run `npm i`
 3. run `npm run all`
