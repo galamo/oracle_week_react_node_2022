@@ -7,6 +7,10 @@
 3. Testing our Api
 4. Error handling
 5. Common libs: cors,joi,dotEnv
+
+## Cloning the project
+git clone https://github.com/galamo/oracle_week_react_node_2022
+
 #### Git
 - `git checkout -b <YOUR_BRANCH_NAME>`
 - `git checkout master`
