@@ -1,12 +1,14 @@
 import express, { NextFunction, Request, Response } from "express"
 import { productsRouter } from "./products";
 import { countriesRouter } from "./countries";
+import cors from "cors"
 import addRequestId from "./middleware/addReqId";
+
 
 const app = express();
 app.use(express.json())
 app.use(addRequestId)
-
+app.use(cors())
 app.get("/", (req: Partial<Request>, res: Response, next: NextFunction) => {
     console.log("api is working")
     res.json({ message: "api is working", time: new Date().toISOString() })

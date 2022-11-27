@@ -21,8 +21,9 @@ describe("Testing suite API", () => {
             const { data } = await axios.post("http://localhost:4000/countries", {
                 countryName: 11
             })
-        } catch (error) {
             throw new Error("Error with testing")
+        } catch (error) {
+            expect(error.response.status).to.be.equal(500)
         }
     })
 })
