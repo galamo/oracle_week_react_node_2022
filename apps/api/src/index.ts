@@ -3,7 +3,8 @@ import { productsRouter } from "./products";
 import { countriesRouter } from "./countries";
 import cors from "cors"
 import addRequestId from "./middleware/addReqId";
-
+import dotenv from "dotenv"
+dotenv.config()
 
 const app = express();
 app.use(express.json())
@@ -25,6 +26,6 @@ app.use((error, req, res, next) => {
     res.status(500).send(`something is not working well! contact the admin with: ${req.requestId}`)
 })
 
-app.listen(4000, () => {
-    console.log("Listening to Port 4000")
+app.listen(process.env.PORT, () => {
+    console.log("Listening to Port ", process.env.PORT)
 })
