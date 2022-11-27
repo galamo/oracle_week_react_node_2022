@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "dist",
+        "target": "ES2016",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "baseUrl": "src",
+        "strict": true
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "api-gatway",
+    "version": "1.0.0",
+    "description": "oracle week example",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc --watch",
+        "start": "nodemon ./dist/index.js",
+        "dev": "ts-node ./src/index.ts",
+        "all": "concurrently -k -p \"[{name}]\" -n \"TypescriptCompiler,application\" -c \"red.bold,yellow.bold,\" \"npm run build\" \"npm start\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ts-node": "^10.9.1"
+    }
+}
