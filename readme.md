@@ -172,6 +172,12 @@ app.get('/healthcheck', function (req, res) {
 #### creating react applicaiton
 `npx create-react-app <APP_NAME> --template typescript`
 
+# EX-1
+1. Create Header component
+2. function MyHeader
+3. the component recieve a string header
+4. the component will render a the relevant sting under <h1> element
+
 #### Project
 1. React Cli 
 2. Project structure
