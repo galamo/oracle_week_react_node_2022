@@ -118,8 +118,14 @@ git clone https://github.com/galamo/oracle_week_react_node_2022
     ```
     - concurrently script
     ```js
-    "_run-all": "concurrently -k -p \"[{name}]\" -n \"TypescriptCompiler,application\" -c \"red.bold,yellow.bold,\" \"npm run build_watch\" \"npm run dev\"",
+    "all": "concurrently -k -p \"[{name}]\" -n \"TypescriptCompiler,application\" -c \"red.bold,yellow.bold,\" \"npm run build_watch\" \"npm run dev\"",
     ```
+
+# Running Setup for API
+1. navigate `./apps/api/`
+2. run `npm i`
+3. run `npm run all`
+
 
 #### Express
 1. Initial HTTP Server snippet
